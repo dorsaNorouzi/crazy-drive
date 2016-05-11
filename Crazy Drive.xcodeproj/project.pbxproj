@@ -16,6 +16,8 @@
 		77E4092B1CDA590D00D6424E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E409291CDA590D00D6424E /* LaunchScreen.storyboard */; };
 		77E409361CDA590D00D6424E /* Crazy_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409351CDA590D00D6424E /* Crazy_DriveTests.swift */; };
 		77E409411CDA590D00D6424E /* Crazy_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409401CDA590D00D6424E /* Crazy_DriveUITests.swift */; };
+		77E4094F1CDA5A4200D6424E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4094E1CDA5A4200D6424E /* Shape.swift */; };
+		77E409511CDA5C0C00D6424E /* imageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409501CDA5C0C00D6424E /* imageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		77E4093C1CDA590D00D6424E /* Crazy DriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crazy DriveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E409401CDA590D00D6424E /* Crazy_DriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crazy_DriveUITests.swift; sourceTree = "<group>"; };
 		77E409421CDA590D00D6424E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E4094E1CDA5A4200D6424E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		77E409501CDA5C0C00D6424E /* imageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				77E409271CDA590D00D6424E /* Assets.xcassets */,
 				77E409291CDA590D00D6424E /* LaunchScreen.storyboard */,
 				77E4092C1CDA590D00D6424E /* Info.plist */,
+				77E4094E1CDA5A4200D6424E /* Shape.swift */,
+				77E409501CDA5C0C00D6424E /* imageManager.swift */,
 			);
 			path = "Crazy Drive";
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E409211CDA590D00D6424E /* GameScene.swift in Sources */,
+				77E409511CDA5C0C00D6424E /* imageManager.swift in Sources */,
 				77E409231CDA590D00D6424E /* GameViewController.swift in Sources */,
 				77E4091D1CDA590C00D6424E /* AppDelegate.swift in Sources */,
+				77E4094F1CDA5A4200D6424E /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
