@@ -34,6 +34,10 @@ class imageManager{
         let size: CGSize = CGSize(width: 24, height: 23)
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
+        //// (?)Color Declarations
+        _ = UIColor(red: 0.371, green: 0.651, blue: 0.306, alpha: 1.000)
+        
+        
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()
         
@@ -66,6 +70,10 @@ class imageManager{
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
         
+        //// (?)Color Declarations
+        _ = UIColor(red: 0.371, green: 0.651, blue: 0.306, alpha: 1.000)
+        
+
         //// triangle Drawing
         let trianglePath = UIBezierPath()
         trianglePath.moveToPoint(CGPointMake(22.5, 0.5))
@@ -95,6 +103,10 @@ class imageManager{
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
         
+        //// (?)Color Declarations
+        _ = UIColor(red: 0.371, green: 0.651, blue: 0.306, alpha: 1.000)
+        
+
         //// ditriangle Drawing
         let ditrianglePath = UIBezierPath()
         ditrianglePath.moveToPoint(CGPointMake(20.5, 0.5))
