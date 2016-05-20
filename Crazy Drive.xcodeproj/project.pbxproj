@@ -18,6 +18,9 @@
 		77E409411CDA590D00D6424E /* Crazy_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409401CDA590D00D6424E /* Crazy_DriveUITests.swift */; };
 		77E4094F1CDA5A4200D6424E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4094E1CDA5A4200D6424E /* Shape.swift */; };
 		77E409511CDA5C0C00D6424E /* imageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409501CDA5C0C00D6424E /* imageManager.swift */; };
+		77E409D11CE63B1300D6424E /* Holes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409D01CE63B1300D6424E /* Holes.swift */; };
+		77E409D31CE63C4900D6424E /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409D21CE63C4900D6424E /* Truck.swift */; };
+		77E409D51CE63D4400D6424E /* BackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E409D41CE63D4400D6424E /* BackGround.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		77E409421CDA590D00D6424E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E4094E1CDA5A4200D6424E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		77E409501CDA5C0C00D6424E /* imageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageManager.swift; sourceTree = "<group>"; };
+		77E409D01CE63B1300D6424E /* Holes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holes.swift; sourceTree = "<group>"; };
+		77E409D21CE63C4900D6424E /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		77E409D41CE63D4400D6424E /* BackGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 				77E4092C1CDA590D00D6424E /* Info.plist */,
 				77E4094E1CDA5A4200D6424E /* Shape.swift */,
 				77E409501CDA5C0C00D6424E /* imageManager.swift */,
+				77E409D01CE63B1300D6424E /* Holes.swift */,
+				77E409D21CE63C4900D6424E /* Truck.swift */,
+				77E409D41CE63D4400D6424E /* BackGround.swift */,
 			);
 			path = "Crazy Drive";
 			sourceTree = "<group>";
@@ -270,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E409211CDA590D00D6424E /* GameScene.swift in Sources */,
+				77E409D11CE63B1300D6424E /* Holes.swift in Sources */,
 				77E409511CDA5C0C00D6424E /* imageManager.swift in Sources */,
+				77E409D51CE63D4400D6424E /* BackGround.swift in Sources */,
 				77E409231CDA590D00D6424E /* GameViewController.swift in Sources */,
 				77E4091D1CDA590C00D6424E /* AppDelegate.swift in Sources */,
 				77E4094F1CDA5A4200D6424E /* Shape.swift in Sources */,
+				77E409D31CE63C4900D6424E /* Truck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +512,7 @@
 				77E409471CDA590D00D6424E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77E409481CDA590D00D6424E /* Build configuration list for PBXNativeTarget "Crazy DriveTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +521,7 @@
 				77E4094A1CDA590D00D6424E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77E4094B1CDA590D00D6424E /* Build configuration list for PBXNativeTarget "Crazy DriveUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +530,7 @@
 				77E4094D1CDA590D00D6424E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
