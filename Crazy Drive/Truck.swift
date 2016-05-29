@@ -10,13 +10,20 @@ import Foundation
 import SpriteKit
 
 class Truck: SKSpriteNode {
-    private var truckName: String
-    init(truckName: String){
-        self.truckName = truckName
-        let Image = imageManager.squareImage() //do your setup here to make a UIImage
-        let Texture = SKTexture(image: Image)
+    internal var type: Int
+    init(type: Int) {
+        self.type = type
+        var image = UIImage?() //do your setup here to make a UIImage
+        switch type {
+        case 1:
+            image = imageManager.truckImage()
+        default:
+            image = imageManager.truckImage()
+        }
         
-        super.init(texture: Texture, color: UIColor.blackColor(), size: Image.size)
+        let Texture = SKTexture(image: image!)
+        
+        super.init(texture: Texture, color: UIColor.blackColor(), size: image!.size)
         self.xScale = 2
         self.yScale = 2
         //truck should be 2
