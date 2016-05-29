@@ -10,13 +10,20 @@ import Foundation
 import SpriteKit
 
 class BackGround: SKSpriteNode {
-    private var backgroundName: String
-    init(backgroundName: String){
-        self.backgroundName = backgroundName
-        let Image = imageManager.squareImage() //do your setup here to make a UIImage
-        let Texture = SKTexture(image: Image)
+    internal var type: Int
+    init(type: Int) {
+        self.type = type
+        var image = UIImage?() //do your setup here to make a UIImage
+        switch type {
+        case 1:
+            image = imageManager.backgroundImage()
+        default:
+            image = imageManager.backgroundImage()
+        }
         
-        super.init(texture: Texture, color: UIColor.blackColor(), size: Image.size)
+        let Texture = SKTexture(image: image!)
+        
+        super.init(texture: Texture, color: UIColor.blackColor(), size: image!.size)
         self.xScale = 5
         self.yScale = 5
         //truck should be 2
@@ -29,6 +36,5 @@ class BackGround: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+   
 }
-

@@ -12,7 +12,7 @@ import UIKit
 class imageManager{
    
     class func squareImage() -> UIImage {
-        let size: CGSize = CGSize(width: 15, height: 13)
+        let size: CGSize = CGSize(width: 15, height: 15)
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
         //// Color Declarations
@@ -234,13 +234,13 @@ class imageManager{
     
     
     class func blueSquareImage() -> UIImage {
-        let size: CGSize = CGSize(width: 15, height: 13)
+        let size: CGSize = CGSize(width: 15, height: 15)
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
         //// Color Declarations
         let color = UIColor(red: 0.049, green: 0.845, blue: 0.934, alpha: 1.000)
         //// square Drawing
-        let squarePath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 15, height: 13))
+        let squarePath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 13, height: 13))
         color.setFill()
         squarePath.fill()
         

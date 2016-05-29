@@ -10,21 +10,48 @@ import Foundation
 import SpriteKit
 
 class Shape: SKSpriteNode {
-    private var shapeName: String
-    init(shapeName: String){
-        self.shapeName = shapeName
-        let Image = imageManager.squareImage() //do your setup here to make a UIImage
-        let Texture = SKTexture(image: Image)
+    //change
+    internal var type: Int
+    internal var shapeColor: UIColor
+    init(type: Int, shapeC: UIColor) {
+        self.type = type
+        self.shapeColor = shapeC
+        let image: UIImage?//do your setup here to make a UIImage
         
-        super.init(texture: Texture, color: UIColor.blackColor(), size: Image.size)
-        self.xScale = 4
-        self.yScale = 4
+        switch type{
+        case 1:
+            image = imageManager.squareImage() //do your setup here to make a UIImage
+        case 2:
+            image = imageManager.polygonImage() //do your setup here to make a UIImage
+        case 3:
+            image = imageManager.triangleImage() //do your setup here to make a UIImage
+        case 4:
+            image = imageManager.ditriangleImage()
+        default:
+            image = imageManager.ditriangleImage() //do your setup here to make a UIImage
+        }
+        
+        let Texture = SKTexture(image: image!)
+        
+        super.init(texture: Texture, color: UIColor.blackColor(), size: image!.size)
+        
+        self.xScale = 3
+        self.yScale = 3
+        
+        if type == 1 {
+            self.xScale = 4
+            self.yScale = 4
+        }
+        
+
+        
         //truck should be 2
         //background should be 5
         //shapes can be 4
-   
+        
         
     }
+
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -10,15 +10,43 @@ import Foundation
 import SpriteKit
 
 class Holes: SKSpriteNode {
-    private var holeName: String
-    init(holeName: String){
-        self.holeName = holeName
-        let Image = imageManager.blueSquareImage() //do your setup here to make a UIImage
-        let Texture = SKTexture(image: Image)
+    //change
+    internal var type: Int
+    internal var holesColor: UIColor
+    init(type: Int, holesC: UIColor){
+        self.type = type
+        self.holesColor = holesC
+        let image: UIImage?//do your setup here to make a UIImage
         
-        super.init(texture: Texture, color: UIColor.blackColor(), size: Image.size)
-        self.xScale = 4
-        self.yScale = 4
+        switch type{
+        case 1:
+            image = imageManager.blueSquareImage() //do your setup here to make a UIImage
+        case 2:
+            image = imageManager.bluePolygonImage() //do your setup here to make a UIImage
+        case 3:
+            image = imageManager.blueTriangleImage() //do your setup here to make a UIImage
+        case 4:
+            image = imageManager.blueDitriangleImage()
+        default:
+            image = imageManager.blueDitriangleImage() //do your setup here to make a UIImage
+        }
+        
+        let Texture = SKTexture(image: image!)
+        
+        super.init(texture: Texture, color: UIColor.blackColor(), size: image!.size)
+        
+        
+        self.xScale = 3
+        self.yScale = 3
+        
+        if type == 1 {
+            self.xScale = 4
+            self.yScale = 4
+        }
+
+        
+        //self.xScale = 4
+        //self.yScale = 4
         //truck should be 2
         //background should be 5
         //shapes can be 4
