@@ -13,9 +13,17 @@ class GameScene: SKScene {
     var shape: Shape?
     var background: BackGround?
     var interval = 0
+    var help = SKSpriteNode()
+
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        
+        //help sign
+        help = SKSpriteNode(texture: SKTexture(image: imageManager.imageForHelpSymbol()))
+        help.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+        help.name = "help"
+        self.addChild(help)
         
         //background
         let bg1 = BackGround(type: 1)
@@ -84,6 +92,21 @@ class GameScene: SKScene {
         // Remember original location
         lastLocation = shape!.position
         //selectNodeForTouch(positionInScene)
+        
+        let touch = touches.first
+        let touchLocation = touch!.locationInNode(self)
+        let nodes = self.nodesAtPoint(touchLocation)
+        _ = false
+        for node in nodes {
+            if node.name == "help" {
+                let scene = HelpScreen()
+                let skView = self.view!
+                skView.ignoresSiblingOrder = true
+                scene.scaleMode = .ResizeFill
+                scene.size = (size: skView.bounds.size)
+                skView.presentScene(scene)
+            }
+        }
         
         for touch in touches {
             _ = touch.locationInNode(self)
